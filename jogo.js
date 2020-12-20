@@ -86,11 +86,35 @@
                                 esc6 = parseInt(window.prompt("Um desconhecido pede carona no meio do trajeto para a safe zone. Dar carona? Sim(1) Não(0)"));  
                                 if(esc6 == 0)
                                 {
-                                    alert("[FINAL] Parabéns. Você e John conseguiram chegar a salvos até uma zona segura onde há cientistas e sobreviventes remanescentes que tentam se defender e desenvolver um antídoto.");
+                                    esc7 = parseInt(window.prompt("[FINAL] Parabéns. Você e John conseguiram chegar a salvos até uma zona segura onde há cientistas e sobreviventes remanescentes que tentam se defender e desenvolver um antídoto. Jogar novamente? Sim(1) Não(0)"));
+                                    if(esc7 == 0)
+                                    {
+                                        return location.href = "inicio.html";
+                                    }
+                                    else if(esc1 == 1)
+                                    {
+                                        return location.href = "escolher_cidade.html";
+                                    }
+                                    else
+                                    {
+                                        esc7 = parseInt(window.prompt("[FINAL] Parabéns. Você e John conseguiram chegar a salvos até uma zona segura onde há cientistas e sobreviventes remanescentes que tentam se defender e desenvolver um antídoto. Jogar novamente? Sim(1) Não(0)"));
+                                    }
                                 }
                                 else if(esc6 == 1)
                                 {
-                                    alert("[FINAL] Parabéns. Você, John e Matthew conseguiram chegar a salvos até uma zona segura onde há cientistas e sobreviventes remanescentes que tentam se defender e desenvolver um antídoto.");
+                                    esc7 = parseInt(window.prompt("[FINAL] Parabéns. Você, John e Matthew conseguiram chegar a salvos até uma zona segura onde há cientistas e sobreviventes remanescentes que tentam se defender e desenvolver um antídoto. Jogar novamente? Sim(1) Não(0)"));
+                                    if(esc7 == 0)
+                                    {
+                                        return location.href = "inicio.html";
+                                    }
+                                    else if(esc1 == 1)
+                                    {
+                                        return location.href = "escolher_cidade.html";
+                                    }
+                                    else
+                                    {
+                                        esc7 = parseInt(window.prompt("[FINAL] Parabéns. Você e John conseguiram chegar a salvos até uma zona segura onde há cientistas e sobreviventes remanescentes que tentam se defender e desenvolver um antídoto. Jogar novamente? Sim(1) Não(0)"));
+                                    }
                                 }
                                 else
                                 {
