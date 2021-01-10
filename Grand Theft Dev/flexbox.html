@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="magico">Não passe o mouse aqui!</button>
+    <p id="texto"></p>
+    <script>
+        var red = 255;
+        var green = 255;
+        var blue = 255;
+        document.getElementById("magico").addEventListener("mouseover",funcaoUm);
+        document.getElementById("magico").addEventListener("mouseout",funcaoDois);
+
+        function funcaoUm()
+        {
+            document.getElementById("texto").innerText = "TEXTO";
+            document.getElementById("magico").style.backgroundColor = `rgb(${Math.round(Math.random()*255)},${Math.round(Math.random()*255)},${Math.round(Math.random()*255)})`;
+        }
+        function funcaoDois()
+        {
+            document.getElementById("texto").innerText = "";
+           // document.getElementById("magico").style.backgroundColor = "blue";
+
+        }
+        
+    </script>
+</body>
+</html>

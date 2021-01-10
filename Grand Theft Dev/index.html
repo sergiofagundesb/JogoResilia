@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Dev Auto</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> <!--RESET CSS BY MEYERWEB-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+            <div id="id-texto-principal">
+                <p class="texto-principal"> Olá. Para iniciar essa jornada, digite seu nome.<br></p>
+                <input type="text" name="nome" id="nomejogador">
+                <input type="submit" value="Jogar" onclick='getPlayerName();'>
+            </div>
+            <p id="local"></p>
+            <p id="dia"></p>
+            <div class="hud">
+                <div class="pai-hp"> 
+                    <div class="filho-hp" id="hp"></div>
+                </div>
+                <div class="pai-dinheiro" id="cash">0</div>
+            </div>
+            <audio id="passed">
+                <source src="./mp3/passed.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+              
+
+    </main>
+    <footer class="container-rodape">
+
+    </footer>
+
+<script src="script/script_um.js"></script>
+</body>
+</html>

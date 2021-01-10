@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function funcao4()
+{
+    console.log( d );
+}
+
+
+var a = 1; // não morre
+
+
+function funcao1()
+{
+    console.log( a );
+}
+
+
+funcao1();
+
+
+function funcao2()
+{
+    console.log( b );
+}
+
+
+funcao2();
+
+
+var b = 2; // não morre, é içado
+let c = 3; // só pode ser chamado daqui pra baixo;
+
+
+funcao3();
+
+
+function funcao3()
+{
+    console.log( c );
+}
+
+
+let d = 4; // só pode ser chamado daqui pra baixo.
+
+
+funcao4();
+funcao5();
+funcao6();
+funcao7();
+funcao8();
+funcao9();
+funcao10();
+funcao11();
+
+
+function funcao5()
+{
+    if ( true )
+    {
+        var e = 5; // pode ser chamado fora do if() porém não fora da função
+    }
+
+    console.log( e );
+}
+
+
+function funcao6()
+{
+    if ( true )
+    {
+        let f = 6; // morre aqui
+    }
+
+    console.log( f );
+
+    var g = 7; // morre na funcao6
+}
+
+console.log("teste")
+function funcao7()
+{
+    console.log( g ); // nao sera acessado
+}
+
+
+let h = 8;
+
+function funcao8()
+{
+    console.log( h ); // nao conseguira ser acessado pois nao pertence a esse escopo
+}
+
+
+function funcao9()
+{
+    for ( var i = 0; i <= 9; i++ )
+    {
+    }
+
+    console.log( i ); // conseguirá ser acessado
+}
+
+
+function funcao10()
+{
+    for ( let j = 0; j <= 10; j++ )
+    {
+    }
+
+    console.log( i ); // não será acessado pois nao esta na funcao9
+}
+
+
+function funcao11()
+{
+    console.log( k );
+
+    let k = 11; // morre nesse escopo
+}
+</script>
+</html>

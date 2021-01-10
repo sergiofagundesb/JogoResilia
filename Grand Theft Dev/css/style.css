@@ -1,0 +1,111 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/pricedown.ttf);
+}
+html {
+    height: 100%
+}
+body{
+    background-image:url("../img/bg2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.img-mobile{
+    display:none;
+}
+.tudo
+{
+    position:relative;
+}
+body{
+    position:relative;
+}
+/*
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    margin: 0 auto;*/
+#id-texto-principal
+{
+    font-family:Arial;
+    font-size:1em;
+    background:black;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    width: 500px; 
+    border: solid 5px yellow;
+    border-radius:15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hud
+{
+    width:200px;
+    height:400px;
+}
+#dia,#local{
+    color:white;
+    font-weight:bold;
+
+}
+#dia:before{
+    content:'Dia: ';
+}
+#local:before{
+    content:'Local: ';
+}
+.pai-dinheiro:before{
+    content:'$';
+}
+.pai-dinheiro{
+    color:rgb(49,81,41);
+    font-family:myFirstFont;
+    font-size:2rem;
+    top:10px;
+    width: 20%;
+    position:relative;
+    display:inline;
+}
+.pai-hp
+{
+    background-color: rgb(117, 4, 4);
+    width: 100%;
+    height: 20px;
+    top: 10px;
+    right: 0;
+    position: relative;
+
+}
+.filho-hp{
+    background-color:red;
+    width:100%;
+    height:20px;
+    position:relative;
+}
+.container-rodape{
+    background:lightslategray;
+    width:100%;
+    height:30px;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+@media (max-width: 680px)
+{
+    .hud{
+        position:absolute;
+        top:10px;
+        height:20px;
+        right:0;
+        width:200px;
+    }
+}
+/*    .img-mobile
+    {
+        display:block;
+        position:absolute;
+    }*/
