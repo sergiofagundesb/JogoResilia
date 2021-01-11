@@ -12,13 +12,14 @@
 
     </header>
     <main>
+        <p id="local"></p>
+        <p id="dia"></p>
+            <img id="imagem-principal" src="img/inicio.jpg">
             <div id="id-texto-principal">
-                <p class="texto-principal"> Olá. Para iniciar essa jornada, digite seu nome.<br></p>
-                <input type="text" name="nome" id="nomejogador">
-                <input type="submit" value="Jogar" onclick='getPlayerName();'>
+                <p class="texto-principal"> Para começar, digite o nome do teu personagem.<br></p>
+                <input class="recebedor" type="text" name="nome" id="nomejogador">
+                <button class="button" onclick='getPlayerName();'>Jogar</button>
             </div>
-            <p id="local"></p>
-            <p id="dia"></p>
             <div class="hud">
                 <div class="pai-hp"> 
                     <div class="filho-hp" id="hp"></div>
@@ -33,7 +34,20 @@
 
     </main>
     <footer class="container-rodape">
-
+        <div class="itens-footer">
+            <a href="https://www.linkedin.com/in/sergio-fagundes-barros-1142591bb/">
+                <img src="psd/010-linkedin.png" class="img-footer">
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="psd/001-facebook.png" class="img-footer">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="psd/011-instagram.png" class="img-footer">
+            </a>
+            <a href="https://github.com/sergiofagundesb ">
+                <img src="psd/016-github.png" class="img-footer">
+            </a>
+        </div>
     </footer>
 
 <script src="script/script_um.js"></script>
